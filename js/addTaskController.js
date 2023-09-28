@@ -12,5 +12,7 @@ function addTask() {
     };
     model.tasks.push(newTask);
     model.app.currentPage = 'week';
+    task.title = '';
+    task.description = '';
     updateView();
 }
